@@ -3,13 +3,12 @@ import re
 
 if len(sys.argv) != 2:
   sys.exit(f"Uso: python3 {sys.argv[0]} puzzle.txt")
-
 file = sys.argv[1]
 
 # Lectura de fichero
-lines = ""
 with open(file, 'r') as f:
   lines = f.readlines()
+
 # Parte 1
 def find_match(regex, lines):
   match = []
